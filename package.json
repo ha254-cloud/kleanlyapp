@@ -4,8 +4,8 @@
   "main": "./App.js",
   "private": true,
   "scripts": {
-    "dev": "cd project/project/project && EXPO_NO_TELEMETRY=1 npx expo start --tunnel --clear-cache",
-    "start": "cd project/project/project && EXPO_NO_TELEMETRY=1 npx expo start --tunnel -c --clear-cache"
+    "dev": "cd project/project/project && npm install && EXPO_NO_TELEMETRY=1 npx expo start --tunnel --clear-cache",
+    "start": "cd project/project/project && npm install && EXPO_NO_TELEMETRY=1 npx expo start --tunnel -c --clear-cache"
   },
   "dependencies": {
     "expo": "~53.0.20",
