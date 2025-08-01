@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.4",
+    "@expo/vector-icons": "^14.1.0",
+    "@react-google-maps/api": "^2.20.7",
+    "expo": "^53.0.20",
+    "expo-location": "^18.1.6",
+    "expo-notifications": "^0.31.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-native": "^0.79.5",
+    "react-native-background-geolocation": "^4.18.9",
+    "react-native-background-job": "^2.3.1",
+    "react-native-maps": "^1.20.1",
+    "react-native-web": "^0.20.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "typescript": "~5.8.3"
+  },
+  "scripts": {
+    "dev": "cd project/project && rm -rf node_modules package-lock.json && npm install && EXPO_NO_TELEMETRY=1 npx expo start --tunnel --clear-cache",
+    "start": "cd project/project && rm -rf node_modules package-lock.json && npm install && EXPO_NO_TELEMETRY=1 npx expo start --tunnel -c --clear-cache"
+  }
+}

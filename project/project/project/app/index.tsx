@@ -1,8 +1,7 @@
-import { registerRootComponent } from 'expo';
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Alert } from 'react-native';
 
-function App() {
+export default function IndexScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>KLEANLY</Text>
@@ -10,16 +9,9 @@ function App() {
       
       <TouchableOpacity 
         style={styles.button} 
-        onPress={() => Alert.alert('KLEANLY Services', 'Choose your service:\n\n🧺 Wash & Fold\n👔 Dry Cleaning\n👟 Shoe Care\n🚚 Pickup & Delivery')}
+        onPress={() => Alert.alert('Welcome!', 'KLEANLY app is working!')}
       >
-        <Text style={styles.buttonText}>Start Service</Text>
-      </TouchableOpacity>
-      
-      <TouchableOpacity 
-        style={[styles.button, styles.secondaryButton]} 
-        onPress={() => Alert.alert('Login', 'Login feature coming soon!')}
-      >
-        <Text style={[styles.buttonText, styles.secondaryButtonText]}>Login</Text>
+        <Text style={styles.buttonText}>Test App</Text>
       </TouchableOpacity>
       
       <Text style={styles.info}>🧺 Laundry • 👔 Dry Cleaning • 👟 Shoe Care</Text>
@@ -54,20 +46,11 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginBottom: 15,
     alignItems: 'center',
-    minWidth: 200,
   },
   buttonText: {
     color: '#1E40AF',
     fontSize: 16,
     fontWeight: '600',
-  },
-  secondaryButton: {
-    backgroundColor: 'transparent',
-    borderWidth: 2,
-    borderColor: '#FFFFFF',
-  },
-  secondaryButtonText: {
-    color: '#FFFFFF',
   },
   info: {
     fontSize: 14,
@@ -76,6 +59,3 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
-
-registerRootComponent(App);
-export default App;
